@@ -19,7 +19,7 @@ spec:
       targetRevision: 19.7.2
       helm:
         valueFiles:
-          - $starburnRepo/argocd-apps/values/prometheus.yaml
+          - $starburnRepo/argocd_apps/values/prometheus.yaml
   syncPolicy:
     automated:
       prune: true

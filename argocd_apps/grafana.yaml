@@ -19,7 +19,7 @@ spec:
     targetRevision: 6.52.2
     helm:
       valueFiles:
-        - $starburnRepo/argocd-apps/values/grafana.yaml         
+        - $starburnRepo/argocd_apps/values/grafana.yaml         
   syncPolicy:
     automated:
       prune: true
