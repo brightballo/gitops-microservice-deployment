@@ -26,3 +26,5 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+  
+  progressDeadlineSeconds: 600
