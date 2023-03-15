@@ -4,7 +4,7 @@ metadata:
   name: exam-deployment
   namespace: argocd
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: exam
@@ -39,5 +39,5 @@ spec:
   ports:
   - name: http
     port: 80
-    targetPort: 8080
+    targetPort: 80
   type: LoadBalancer
