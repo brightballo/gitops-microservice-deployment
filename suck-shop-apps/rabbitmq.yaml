@@ -10,6 +10,8 @@ spec:
   source:
     helm:
       values: |
+        nameOverride: "sock-shop-rabbitmq"
+        fullnameOverride: "sock-shop-rabbitmq"      
         image:
           repository: rabbitmq
           tag: 3.6.8
