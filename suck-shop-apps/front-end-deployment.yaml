@@ -27,6 +27,8 @@ spec:
       containers:
         - image: weaveworksdemos/front-end:0.3.12
           name: front-end
+          ports:
+          - containerPort: 8079          
           resources: {}
           securityContext:
             capabilities:
