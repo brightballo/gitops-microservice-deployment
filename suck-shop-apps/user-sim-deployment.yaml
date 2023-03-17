@@ -33,7 +33,7 @@ spec:
             - -c
             - "2"
             - -h
-            - edge-router
+            - http://edge-router.sock-shop.svc.cluster.local
           image: weaveworksdemos/load-test:0.1.1
           name: user-sim
           resources: {}
