@@ -11,10 +11,10 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - repoURL: https://github.com/microservices-demo/microservices-demo.git
+  - repoURL: https://github.com/starburn-hub/microservices-demo.git
     targetRevision: HEAD
     ref: socksRepo
-  - repoURL: https://github.com/microservices-demo/microservices-demo.git
+  - repoURL: https://github.com/starburn-hub/microservices-demo.git
     targetRevision: master
     path: ./deploy/kubernetes/helm-chart
     helm:
