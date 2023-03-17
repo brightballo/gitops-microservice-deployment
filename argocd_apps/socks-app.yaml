@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sock-shop-apps
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: sock-shop
+    server: https://kubernetes.default.svc
+  project: default
+  sources:
+  - repoURL: https://github.com/starburn-hub/final-exam.git
+    targetRevision: main
+    path: suck-shop-apps    
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
