@@ -13,7 +13,7 @@ spec:
   sources:
   - repoURL: https://github.com/hostspaceng/helm-charts.git
     targetRevision: main
-    path: ./      
+    path: suck-shop-apps    
   syncPolicy:
     automated:
       prune: true
