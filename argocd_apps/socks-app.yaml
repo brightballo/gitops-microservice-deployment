@@ -1,25 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sock-shop
+  name: sock-shop-apps
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd
+    namespace: sock-shop
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - repoURL: https://github.com/starburn-hub/microservices-demo.git
-    targetRevision: HEAD
-    ref: socksRepo
-  - repoURL: https://github.com/starburn-hub/microservices-demo.git
-    targetRevision: master
-    path: ./deploy/kubernetes/helm-chart
-    helm:
-      valueFiles:
-        - $socksRepo/deploy/kubernetes/helm-chart/values.yaml         
+  - repoURL: https://github.com/hostspaceng/helm-charts.git
+    targetRevision: main
+    path: ./      
   syncPolicy:
     automated:
       prune: true

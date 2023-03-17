@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sock-shop-frontend
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io  
+spec:
+  project: default
+  source:
+    helm:
+      values: |
+        image:
+          repository: weaveworksdemos/front-end
+          tag: 0.3.12
+        service:
+          port: 8079
+    repoURL: https://github.com/hostspaceng/helm-charts.git
+    targetRevision: main
+    path: ./
+  destination:
+    namespace: sock-shop
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
