@@ -9,6 +9,7 @@ metadata:
     io.kompose.service: edge-router
   name: edge-router
 spec:
+  type: LoadBalancer
   ports:
     - name: "80"
       port: 80
