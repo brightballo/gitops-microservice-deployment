@@ -1,3 +1,4 @@
+## Grafana configuration############################################
 service:
   type: LoadBalancer
   
@@ -28,3 +29,4 @@ dashboards:
       gnetId: 10000
       revision: 1
       datasource: Prometheus
+#####################################################################

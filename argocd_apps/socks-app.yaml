@@ -1,3 +1,4 @@
+# Description: This file contains the ArgoCD Application manifest for the Sock Shop application##########################
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -20,3 +21,5 @@ spec:
       selfHeal: true
     syncOptions:
     - CreateNamespace=true
+
+############################### END OF socks-app.yaml ####################################
