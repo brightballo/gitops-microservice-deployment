@@ -16,8 +16,9 @@ spec:
     ref: starburnRepo
   - repoURL: https://helm.nginx.com/stable
     chart: ingress-nginx
-    targetRevision: 0.13.2
+    targetRevision: 4.5.2
     helm:
+      releaseName: nginx-ingress
       valueFiles:
         - $starburnRepo/argocd_apps/values/ingress-nginx.yaml         
   syncPolicy:
