@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ingress-nginx
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: ingress-nginx
+    server: https://kubernetes.default.svc
+  project: default
+  sources:
+  - repoURL: https://github.com/starburn-hub/final-exam.git
+    targetRevision: HEAD
+    ref: starburnRepo
+  - repoURL: https://helm.nginx.com/stable
+    chart: nginx-ingress
+    targetRevision: 0.13.2
+    helm:
+      valueFiles:
+        - $starburnRepo/argocd_apps/values/ingress-nginx.yaml         
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
