@@ -14,7 +14,7 @@ spec:
   - repoURL: https://github.com/starburn-hub/final-exam.git
     targetRevision: main
     ref: starburnRepo
-  - repoURL: https://helm.nginx.com/stable
+  - repoURL: https://kubernetes.github.io/ingress-nginx
     chart: ingress-nginx
     targetRevision: 4.5.2
     helm:
