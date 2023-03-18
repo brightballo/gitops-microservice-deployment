@@ -22,8 +22,8 @@ variable "env" {
   type        = string
   default     = "staging"
 
-  validation {
-    condition     = contains(["staging", "prod"], var.env)
+  validation { 
+    condition     = contains(["staging", "prod"], var.env) #
     error_message = "Invalid argument \"env\", please choose one of: (\"staging\",\"prod\")."
   }
 }
