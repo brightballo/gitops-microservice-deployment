@@ -1,2 +1,4 @@
 controller:
-    replicaCount: 3
+  replicaCount: 3
+  extraArgs:
+    enable-ssl-passthrough: ""
