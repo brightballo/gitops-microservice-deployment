@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/62260900/226180985-6f6358fb-2e67-4865-8bc1-4b9ad7ec6c2f.png)
+
 # Deploying a react app and the socks app to EKS using Terraform and Helm charts on argocd and monitoring with prometheus and grafana combined with a CI/CD pipeline using Github Actions
 
 ## Prerequisites
