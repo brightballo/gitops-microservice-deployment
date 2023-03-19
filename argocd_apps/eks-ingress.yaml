@@ -38,6 +38,7 @@ spec:
                 name: front-end
                 port:
                   name: http
+                namespace: sock-shop
     - host: app.odeybright.me
       http:
         paths:
