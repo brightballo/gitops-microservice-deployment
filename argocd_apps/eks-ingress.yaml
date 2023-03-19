@@ -50,7 +50,6 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - project.odeybright.me
         - prometheus.odeybright.me
         - grafana.odeybright.me
         - sockapp.odeybright.me
