@@ -72,6 +72,12 @@ module "eks" {
   }
 }
 
+cluster_addons = {
+    ebs_csi_driver = {
+      resolve_conflicts = "OVERWRITE"
+    }
+  }
+
 
 module "key_pair" {
   source  = "terraform-aws-modules/key-pair/aws"
