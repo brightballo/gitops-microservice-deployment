@@ -27,6 +27,14 @@
 * The prometheus dashboard will be available at the following url: prometheus.odeybright.me
 * The username for both the grafana and argocd dashboard is admin
 
+* The argocd_apps folder contains the deployment files for the exam app, the socks app and the monitoring stack (prometheus and grafana) and is plugged into the argocd deployment
+
+* The argocd_apps_2 folder contains the deployment files for the socks app and is plugged into the argocd deployment
+
+* The demo-app folder contains the code for the exam app and the Dockerfile for the exam app and is plugged into the Github Actions workflow
+
+* The terraform folder contains the terraform files for the infrastructure.
+
 ## Deploying the infrastructure
 
 * Create a new directory and clone the repository
