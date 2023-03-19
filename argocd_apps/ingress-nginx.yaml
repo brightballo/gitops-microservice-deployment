@@ -12,12 +12,13 @@ spec:
   project: default
   sources:
   - repoURL: https://github.com/starburn-hub/final-exam.git
-    targetRevision: HEAD
+    targetRevision: main
     ref: starburnRepo
-  - repoURL: https://helm.nginx.com/stable
-    chart: nginx-ingress
-    targetRevision: 0.13.2
+  - repoURL: https://kubernetes.github.io/ingress-nginx
+    chart: ingress-nginx
+    targetRevision: 4.5.2
     helm:
+      releaseName: nginx-ingress
       valueFiles:
         - $starburnRepo/argocd_apps/values/ingress-nginx.yaml         
   syncPolicy:
