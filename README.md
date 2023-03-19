@@ -135,6 +135,7 @@ kubectl get secret --namespace argocd grafana -o jsonpath="{.data.admin-password
 ```bash
 aws eks --region  us-east-1 update-kubeconfig --name Altschool-staging
 ```
+![image](https://user-images.githubusercontent.com/62260900/226217637-1e5dc915-9b93-4daa-962c-ea229f66b80c.png)
 
 
 
