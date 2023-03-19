@@ -35,9 +35,9 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: sockapp
+                name: front-end
                 port:
-                  name: front-end
+                  number: 80
     - host: app.odeybright.me
       http:
         paths:
@@ -47,7 +47,7 @@ spec:
               service:
                 name: exam-service
                 port:
-                  name: http
+                  number: 80
   tls:
     - hosts:
         - project.odeybright.me
