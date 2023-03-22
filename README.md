@@ -20,11 +20,11 @@
 
 * The argocd ingress will be available at the following url: argocd.odeybright.me
 * the password for will be eU320p2Om7mEgwZG
-* The exam app will be available at the following url: app.odeybright.me
-* The socks app will be available at the following url: sockapp.odeybright.me
-* The grafana dashboard will be available at the following url: grafana.odeybright.me
-* The password for the grafana dashboard is STXILIs7qB36GNQGppJi27hOSz0josC085Zj8QyA
-* The prometheus dashboard will be available at the following url: prometheus.odeybright.me
+* The exam app will be available at the following url: http://app.odeybright.me
+* The socks app will be available at the following url: http://sockapp.odeybright.me
+* The grafana dashboard will be available at the following url: http://grafana.odeybright.me
+* The password for the grafana dashboard is nmhFkZHLZTaGgbzXxnikEAGsaHQih8MR0iqUxXJY
+* The prometheus dashboard will be available at the following url: http://prometheus.odeybright.me
 * The username for both the grafana and argocd dashboard is admin
 
 * The argocd_apps folder contains the deployment files for the exam app, the socks app and the monitoring stack (prometheus and grafana) and is plugged into the argocd deployment
